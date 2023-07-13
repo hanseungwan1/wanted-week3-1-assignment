@@ -3,6 +3,7 @@ import "./App.css";
 import Layout from "./components/common/Layout";
 import ListPage from "./pages/ListPage";
 import DetailPage from "./pages/DetailPage";
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   return (
@@ -20,6 +21,14 @@ function App() {
         element={
           <Layout>
             <DetailPage />
+          </Layout>
+        }
+      />
+      <Route
+        path="/error"
+        element={
+          <Layout>
+            <ErrorPage />
           </Layout>
         }
       />
